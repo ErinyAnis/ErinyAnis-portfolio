@@ -1,0 +1,101 @@
+header {
+    padding-top: 6rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+header .job-title {
+    font-size: 20px;
+}
+
+/* ----------- CTA ---------- */
+.cta {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ----------- header-socials ---------- */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after {
+    content: '';
+    width: 1.5px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.header__socials a {
+    font-size: 18px;
+}
+
+/* ----------- me ---------- */
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 20rem;
+    height: 23rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 2rem 1.2rem 1.2rem;
+    margin: 4rem auto 0;
+    text-align: center;
+}
+
+/* ----------- scroll down ---------- */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* ----------- media queries ---------- */
+
+@media (max-width: 992px) {
+    header {
+        padding-top: 5rem;
+    }
+
+    .me {
+        width: 18rem;
+        height: 20rem;
+        padding: 1rem 1rem 0 1rem;
+        margin-top: 4rem;
+    }
+
+    header .job-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+
+    .me {
+        width: 18rem;
+        height: 20rem;
+    }
+
+    header .job-title {
+        font-size: 16px;
+    }
+}

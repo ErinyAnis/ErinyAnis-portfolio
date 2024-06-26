@@ -1,0 +1,111 @@
+.contact__option {
+    background: var(--color-bg-variant);
+    padding: 1.2rem 1.3rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.contact__option:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+.contact__option-icon {
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+}
+
+.contact__option h4 {
+    font-size: 22px;
+}
+
+.contact__option h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.contact__container a, .contact__container a:hover {
+    color: inherit;
+}
+
+.contact__option .link {
+    margin-top: 0.7rem;
+    display: inline-block;
+    color: var(--color-primary);
+}
+
+.contact__container form label {
+    font-size: 18px;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.contact__container form input, .contact__container form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    transition: var(--transition);
+}
+
+.contact__container form input:focus, .contact__container form textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.contact__container form input::placeholder, .contact__container form textarea::placeholder {
+    color: var(--color-light-2);
+    font-size: 14px;
+}
+
+.alert-success, .alert-danger {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.error {
+    color: red;
+}
+
+/* -------------- form --------------- */
+
+@media (max-width: 992px) {
+    .contact__option-icon {
+        font-size: 20px;
+    }
+
+    .contact__option h4 {
+        font-size: 20px;
+    }
+    
+    .contact__option h5 {
+        font-size: 14px;
+    }
+
+    .contact__option .link {
+        font-size: 14px;
+    }
+
+    .contact__options {
+        width: 70%;
+        margin: auto;
+    }
+
+    .contact__container form label {
+        font-size: 16px;
+    }
+
+    .contact__container form input, .contact__container form textarea {
+        padding: 0.62rem 0.8rem;
+    }
+
+    .alert-success, .alert-danger {
+        font-size: 14px;
+    }
+
+    /* -------------- form --------------- */
+}
