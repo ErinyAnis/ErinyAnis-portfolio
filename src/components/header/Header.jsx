@@ -1,8 +1,8 @@
-import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/me-1.png";
 import HeaderSocials from "./HeaderSocials";
 import { HashLink as Link } from "react-router-hash-link";
+import "./header.css";
 
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const Header = () => {
         <HeaderSocials />
 
         <div className="me">
-          <img src={ME} alt="me" />
+          <img src={ME} alt="me" loading="lazy" />
         </div>
 
         <Link to="#contact" className="scroll__down">
