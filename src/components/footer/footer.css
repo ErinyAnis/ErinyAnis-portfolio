@@ -60,4 +60,14 @@ footer a:hover {
     .footer__logo {
         font-size: 1.7rem;
     }
+
+    .footer__copyright {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer__copyright {
+        font-size: 12px;
+    }
 }
