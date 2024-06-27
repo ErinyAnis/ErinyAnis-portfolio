@@ -50,6 +50,7 @@
     border: 2px solid var(--color-primary-variant);
     resize: none;
     transition: var(--transition);
+    margin-bottom: 3px;
 }
 
 .contact__container form input:focus, .contact__container form textarea:focus {
@@ -65,10 +66,12 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    text-align: center;
 }
 
-.error {
-    color: red;
+.error-message {
+    font-size: 14px;
+    color: rgb(177 43 43);
 }
 
 /* -------------- form --------------- */

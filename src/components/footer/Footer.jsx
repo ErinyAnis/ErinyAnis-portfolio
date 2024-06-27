@@ -1,8 +1,7 @@
 import { HashLink as Link } from "react-router-hash-link";
 import { GrFacebookOption } from "react-icons/gr";
-
 import { BsLinkedin } from "react-icons/bs";
-import { GrGithub } from "react-icons/gr";
+import { SiWhatsapp } from "react-icons/si";
 
 import "./footer.css";
 
@@ -45,8 +44,8 @@ const Footer = () => {
           <Link to="https://linkedin.com/in/eriny-anis" target="_blank">
             <BsLinkedin />
           </Link>
-          <Link to="https://github.com/ErinyAnis" target="_blank">
-            <GrGithub />
+          <Link to="https://wa.me/201227523105" target="_blank">
+            <SiWhatsapp />
           </Link>
         </div>
 

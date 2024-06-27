@@ -46,19 +46,18 @@ const About = () => {
               </div>
 
               <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
-              ab. Vitae ratione nulla nisi quam quidem qui voluptate eaque ex.
-              Cumque eligendi tenetur aliquam, totam aperiam qui. Esse, suscipit
-              consectetur.
-            </p>
-            <Link to="#contact" className="btn btn-primary">
-              Let&apos;s Tack
-            </Link>
+                As a React frontend developer, I specialize in creating
+                dynamic and user-friendly web applications. With
+                experience in JavaScript and a strong proficiency in React, I
+                excel at building responsive and efficient interfaces. I
+                continuously seek to enhance my skills and stay updated with the
+                latest industry trends to ensure the delivery of exceptional
+                user experiences.
+              </p>
+              <Link to="#contact" className="btn btn-primary">
+                Let&apos;s Tack
+              </Link>
             </div>
-
-            
-
-            
           </div>
         </div>
       </div>

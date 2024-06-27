@@ -1,32 +1,11 @@
-import { useRef, useState } from 'react';
 import { MdOutlineMail } from "react-icons/md";
 import { PiMessengerLogo } from "react-icons/pi";
 import { IoLogoWhatsapp } from "react-icons/io5";
-import emailjs from 'emailjs-com';
+import Form from "./Form";
 
 import "./contact.css";
 
 const Contact = () => {
-  const form = useRef();
-  const [message, setMessage] = useState(null);
-  const [error, setError] = useState(null);
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_uizxztp', 'template_gtahosm', form.current, 'J7WDHcyjYEjmoM_k8')
-    .then(
-      (response) => {
-        setMessage('Your message has been sent successfully!');
-        setError(null);
-        form.current.reset(); // Reset the form fields
-      },
-      (error) => {
-        setError('Failed to send the message. Please try again later.');
-        setMessage(null);
-      }
-    );
-  };
   return (
     <section id="contact">
       <div className="container">
@@ -67,7 +46,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://api.whatsapp.com/send?phone=201227523105"
+                href="https://wa.me/201227523105"
                 target="_blank"
                 className="contact__option"
                 rel="noreferrer"
@@ -83,46 +62,7 @@ const Contact = () => {
           </div>
 
           <div className="col-lg-8">
-            <form ref={form} onSubmit={sendEmail} className="d-flex flex-column gap-3">
-              <div>
-                <label htmlFor="name">Full Name*</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Full Name"
-                  required
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email">Email*</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div>
-              <label htmlFor="message">Message*</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="7"
-                placeholder="Message"
-                required
-              ></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary m-auto">
-                Send Message
-              </button>
-            </form>
-
-            {message && <div className="alert alert-success mt-3">{message}</div>}
-            {error && <div className="alert alert-danger mt-3">{error}</div>}
+            <Form />
           </div>
         </div>
       </div>
