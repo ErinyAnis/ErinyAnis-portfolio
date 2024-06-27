@@ -85,7 +85,8 @@ ul {
   margin-bottom: 65px !important;
 }
 
-.main-title h5, header h5 {
+.main-title h5,
+header h5 {
   font-size: 16px;
 }
 
@@ -161,7 +162,8 @@ img {
     font-size: 30px;
   }
 
-  .main-title h5, header h5 {
+  .main-title h5,
+  header h5 {
     font-size: 14px;
   }
 
@@ -171,6 +173,11 @@ img {
 
   section {
     padding: 60px 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
   }
 }
 
