@@ -88,7 +88,7 @@ ul {
 .main-title h5,
 header h5 {
   font-size: 16px;
-  margin-bottom: 0;
+  margin-bottom: 3px;
 }
 
 section {
@@ -96,7 +96,7 @@ section {
 }
 
 .colored-sec {
-  background-color: #cacaca5e;
+  background-color: var(--color-bg-variant);
 }
 
 section>h2,
