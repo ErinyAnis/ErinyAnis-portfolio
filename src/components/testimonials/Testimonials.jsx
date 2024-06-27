@@ -50,7 +50,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="colored-sec">
       <div className="container">
-        <div className="main-title text-center mb-5">
+        <div className="main-title text-center">
           <h5>Review from clients</h5>
           <h2>Testimonials</h2>
         </div>

@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <section id="services" className="colored-sec">
       <div className="container">
-        <div className="main-title text-center mb-5">
+        <div className="main-title text-center">
           <h5>What I Offer</h5>
           <h2>Services</h2>
         </div>

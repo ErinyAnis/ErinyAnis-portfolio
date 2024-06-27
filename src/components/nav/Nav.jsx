@@ -16,7 +16,7 @@ const Nav = () => {
   // Function to handle scroll event
   const handleScroll = () => {
     const sections = ['#header', '#about', '#experience', '#services', '#portfolio', '#testimonials', '#contact'];
-    const scrollPosition = window.scrollY + 150; // Adjust this value if needed
+    const scrollPosition = window.scrollY + 150;
 
     for (const section of sections) {
       const element = document.querySelector(section);
