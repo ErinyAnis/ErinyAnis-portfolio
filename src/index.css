@@ -14,7 +14,7 @@
   --color-white: #ffffff;
   --color-primary: #4b7599;
   --color-primary-variant: #83a6c2;
-  --color-dark: #2b435a;
+  --color-dark: #273e53;
   --color-dark-2: #385872;
   --color-light: #898e91;
   --color-light-2: #404040db;
@@ -88,6 +88,7 @@ ul {
 .main-title h5,
 header h5 {
   font-size: 16px;
+  margin-bottom: 0;
 }
 
 section {
@@ -187,7 +188,12 @@ img {
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 33px;
+  }
+
+  .main-title h5,
+  header h5 {
+    font-size: 12px;
   }
 
   section>h2 {

@@ -5,7 +5,7 @@ import { RiBook2Line } from "react-icons/ri";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { MdOutlineRateReview } from "react-icons/md";
-import { PiFilesLight } from "react-icons/pi";
+import { LuFiles } from "react-icons/lu";
 import { HashLink as Link } from 'react-router-hash-link';
 
 import "./nav.css";
@@ -16,7 +16,7 @@ const Nav = () => {
   // Function to handle scroll event
   const handleScroll = () => {
     const sections = ['#header', '#about', '#experience', '#services', '#portfolio', '#testimonials', '#contact'];
-    const scrollPosition = window.scrollY + 200; // Adjust this value if needed
+    const scrollPosition = window.scrollY + 150; // Adjust this value if needed
 
     for (const section of sections) {
       const element = document.querySelector(section);
@@ -49,7 +49,7 @@ const Nav = () => {
         <RiServiceLine />
       </Link>
       <Link to="#portfolio" className={activeNav === '#portfolio' ? 'active' : ''}>
-        <PiFilesLight />
+        <LuFiles />
       </Link>
       <Link to="#testimonials" className={activeNav === '#testimonials' ? 'active' : ''}>
         <MdOutlineRateReview />
