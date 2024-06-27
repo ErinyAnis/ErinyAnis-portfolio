@@ -1,3 +1,7 @@
+#about {
+    margin-top: -1px;
+}
+
 .about__me { 
     border-radius: 2rem;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);

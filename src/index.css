@@ -163,6 +163,10 @@ img {
     font-size: 30px;
   }
 
+  .main-title {
+    margin-bottom: 60px !important;
+  }
+
   .main-title h5,
   header h5 {
     font-size: 14px;
