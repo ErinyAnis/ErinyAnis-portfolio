@@ -55,7 +55,7 @@ const About = () => {
                 user experiences.
               </p>
               <Link to="#contact" className="btn btn-primary">
-                Let&apos;s Tack
+                Let&apos;s Talk
               </Link>
             </div>
           </div>

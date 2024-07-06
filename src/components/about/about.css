@@ -1,5 +1,5 @@
 #about {
-    margin-top: -1px;
+    margin-top: -2px;
 }
 
 .about__me { 
@@ -17,7 +17,6 @@
     transform: rotate(10deg);
     aspect-ratio: 1/1;
     transition: var(--transition);
-    cursor: pointer;
 }
 
 .about__me-img:hover {
@@ -34,7 +33,7 @@
 
 .about__card {
     background: var(--color-bg);
-    border: 1px solid transparent;
+    border: 1px solid var(--stroke-color);
     border-radius: 1rem;
     padding: 1.7rem;
     text-align: center;

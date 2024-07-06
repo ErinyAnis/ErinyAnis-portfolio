@@ -23,6 +23,7 @@
     border-radius: 2rem;
     user-select: none;
     cursor: grab;
+    border: 1px solid var(--stroke-color);
 }
 
 .client__name {
