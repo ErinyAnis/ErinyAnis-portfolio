@@ -65,7 +65,7 @@ const Experience = () => {
               <article className="experience__details">
                 <HiOutlineCheckCircle className="experience__details-icon" />
                 <div>
-                  <h4>JacaScript</h4>
+                  <h4>JavaScript</h4>
                   <small>Experience</small>
                 </div>
               </article>
