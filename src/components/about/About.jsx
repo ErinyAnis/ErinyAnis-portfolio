@@ -15,7 +15,7 @@ const About = () => {
         </div>
 
         <div className="row g-5 pt-2">
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-xl-3">
             <div className="about__me">
               <div className="about__me-img">
                 <img src={ME} alt="about image" />
@@ -23,7 +23,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="col-lg-8">
+          <div className="col-lg-8 col-xl-9">
             <div className="about__content">
               <div className="about__cards d-flex gap-3 gap-md-4 align-items-center flex-wrap flex-lg-nowrap justify-content-center justify-content-lg-start">
                 <article className="about__card">

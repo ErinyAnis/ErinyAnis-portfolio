@@ -17,6 +17,10 @@
     overflow: hidden;
 }
 
+.portfolio__item-image img {
+    height: 180px;
+}
+
 .portfolio__item h3 {
     margin: 1.2rem 0 0.5rem;
     font-size: 24px;
@@ -24,6 +28,11 @@
 
 .portfolio__item p {
     color: var(--color-light-2);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .portfolio__item-cta {
@@ -46,5 +55,9 @@
 
     .portfolio__item p {
         font-size: 14px;
+    }
+
+    .portfolio__item-image img {
+        object-fit: cover;
     }
 }

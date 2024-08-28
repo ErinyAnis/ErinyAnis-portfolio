@@ -1,3 +1,4 @@
+import VS from "../../assets/projects/VS.png";
 import IMG_BG from "../../assets/projects-bg.jpg";
 
 import "./portfolio.css";
@@ -5,10 +6,11 @@ import "./portfolio.css";
 const data = [
   {
     id: 1,
-    image: IMG_BG,
-    title: "Project-1",
-    github: "https://github.com/",
-    demo: "https://github.com/",
+    image: VS,
+    title: "Visual Studio Clone",
+    github: "https://github.com/ErinyAnis/visual-studio-clone.git",
+    demo: "https://visual-studio-clone-two.vercel.app/",
+    description: "Recreated Visual Studio using React and TypeScript, showcasing interactive features and customizable UI."
   },
   {
     id: 2,
@@ -16,6 +18,7 @@ const data = [
     title: "Project-2",
     github: "https://github.com/",
     demo: "https://github.com/",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi."
   },
   {
     id: 3,
@@ -23,6 +26,7 @@ const data = [
     title: "Project-3",
     github: "https://github.com/",
     demo: "https://github.com/",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi."
   },
   {
     id: 4,
@@ -30,6 +34,7 @@ const data = [
     title: "Project-4",
     github: "https://github.com/",
     demo: "https://github.com/",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi."
   },
   {
     id: 5,
@@ -37,6 +42,7 @@ const data = [
     title: "Project-5",
     github: "https://github.com/",
     demo: "https://github.com/",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi."
   },
   {
     id: 6,
@@ -44,6 +50,7 @@ const data = [
     title: "Project-6",
     github: "https://github.com/",
     demo: "https://github.com/",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi."
   },
 ];
 
@@ -57,7 +64,7 @@ const Portfolio = () => {
         </div>
 
         <div className="portfolio-container row g-4">
-          {data.map(({ id, image, title, github, demo }) => {
+          {data.map(({ id, image, title, github, demo, description }) => {
             return (
               <div className="col-md-6 col-lg-4" key={id}>
                 <article className="portfolio__item">
@@ -65,7 +72,7 @@ const Portfolio = () => {
                     <img src={image} alt={title} />
                   </div>
                   <h3>{title}</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi.</p>
+                  <p>{description}</p>
                   <div className="portfolio__item-cta">
                     <a href={github} className="btn" target="_blank">
                       Github

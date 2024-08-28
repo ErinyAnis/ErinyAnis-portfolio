@@ -40,7 +40,7 @@ header .job-title {
 }
 
 .header__socials a {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 /* ----------- me ---------- */
@@ -62,7 +62,7 @@ header .job-title {
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 /* ----------- media queries ---------- */
