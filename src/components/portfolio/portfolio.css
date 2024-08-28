@@ -18,7 +18,7 @@
 }
 
 .portfolio__item-image img {
-    height: 180px;
+    height: 200px;
 }
 
 .portfolio__item h3 {
@@ -59,6 +59,6 @@
     }
 
     .portfolio__item-image img {
-        object-fit: cover;
+        height: 180px;
     }
 }
