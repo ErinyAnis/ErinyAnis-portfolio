@@ -33,6 +33,7 @@
     -webkit-line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-clamp: 2;
 }
 
 .portfolio__item-cta {
