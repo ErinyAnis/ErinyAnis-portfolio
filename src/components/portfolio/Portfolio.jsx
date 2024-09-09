@@ -1,4 +1,6 @@
 import VS from "../../assets/projects/VS.png";
+import IC from "../../assets/projects/IC.png"
+import FOODIES from "../../assets/projects/foodies.png";
 import IMG_BG from "../../assets/projects-bg.jpg";
 
 import "./portfolio.css";
@@ -14,43 +16,19 @@ const data = [
   },
   {
     id: 2,
-    image: IMG_BG,
-    title: "Project-2",
-    github: "https://github.com/",
-    demo: "https://github.com/",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi."
+    image: IC,
+    title: "International Contractors",
+    github: "https://github.com/ErinyAnis/international-contractors.git",
+    demo: "https://intcot.com/",
+    description: "Developed a responsive, user-friendly website for IC company, leveraging 30+ years of industry expertise in Egyptian ports. Utilized HTML5, CSS3, Bootstrap 5, and jQuery for seamless navigation and interactive features."
   },
   {
     id: 3,
-    image: IMG_BG,
-    title: "Project-3",
-    github: "https://github.com/",
-    demo: "https://github.com/",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi."
-  },
-  {
-    id: 4,
-    image: IMG_BG,
-    title: "Project-4",
-    github: "https://github.com/",
-    demo: "https://github.com/",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi."
-  },
-  {
-    id: 5,
-    image: IMG_BG,
-    title: "Project-5",
-    github: "https://github.com/",
-    demo: "https://github.com/",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi."
-  },
-  {
-    id: 6,
-    image: IMG_BG,
-    title: "Project-6",
-    github: "https://github.com/",
-    demo: "https://github.com/",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi."
+    image: FOODIES,
+    title: "Foodies Community",
+    github: "https://github.com/ErinyAnis/MealsApp.git",
+    demo: "https://meals-app-weld-zeta.vercel.app/",
+    description: "Built a dynamic foodies community platform with Next.js, enabling users to explore and share recipes. The project features a clean, user-friendly interface and fosters collaboration among food enthusiasts."
   },
 ];
 

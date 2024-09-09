@@ -1,4 +1,4 @@
-import CV from "../../assets/ErinyAnis-FrontEnd.pdf";
+import CV from "../../assets/Eriny-Anis-FrontEnd.pdf";
 import { HashLink as Link } from "react-router-hash-link";
 
 const CTA = () => {
