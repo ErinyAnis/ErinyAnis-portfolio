@@ -1,7 +1,7 @@
 import VS from "../../assets/projects/VS.png";
 import IC from "../../assets/projects/IC.png"
 import FOODIES from "../../assets/projects/foodies.png";
-import IMG_BG from "../../assets/projects-bg.jpg";
+// import IMG_BG from "../../assets/projects-bg.jpg";
 
 import "./portfolio.css";
 
