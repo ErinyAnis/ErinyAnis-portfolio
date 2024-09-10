@@ -1,6 +1,8 @@
 import VS from "../../assets/projects/VS.png";
 import IC from "../../assets/projects/IC.png"
 import FOODIES from "../../assets/projects/foodies.png";
+import TASK_ORGANIZER from "../../assets/projects/task-organizer.png";
+import MINA_HEMAIA from "../../assets/projects/mena_hemaia.png";
 // import IMG_BG from "../../assets/projects-bg.jpg";
 
 import "./portfolio.css";
@@ -24,6 +26,22 @@ const data = [
   },
   {
     id: 3,
+    image: TASK_ORGANIZER,
+    title: "Task Organizer",
+    github: "https://github.com/ErinyAnis/TaskOrganizer.git",
+    demo: "https://task-organizer-mz5guymkb-eriny-s-projects.vercel.app",
+    description: "Modern to-do list app featuring user authentication, task management, and persistent storage. Built with Next.js, TypeScript, Tailwind CSS, Prisma, and ShadcnUI, it offers a responsive and intuitive interface to manage tasks efficiently across devices."
+  },
+  {
+    id: 4,
+    image: MINA_HEMAIA,
+    title: "mena Hemaia",
+    github: "https://github.com/ErinyAnis/MealsApp.git",
+    demo: "https://meals-app-weld-zeta.vercel.app/",
+    description: "Built a portfolio website for finance expert Mena Hemaia, highlighting his roles, qualifications, and commitment to financial education."
+  },
+  {
+    id: 5,
     image: FOODIES,
     title: "Foodies Community",
     github: "https://github.com/ErinyAnis/MealsApp.git",
