@@ -37,7 +37,7 @@ const data = [
     image: MINA_HEMAIA,
     title: "mena Hemaia",
     github: "https://github.com/ErinyAnis/MealsApp.git",
-    demo: "https://meals-app-weld-zeta.vercel.app/",
+    demo: "https://mena-hemaia.vercel.app/",
     description: "Built a portfolio website for finance expert Mena Hemaia, highlighting his roles, qualifications, and commitment to financial education."
   },
   {
