@@ -17,16 +17,21 @@ const Experience = () => {
               <article className="experience__details">
                 <HiOutlineCheckCircle className="experience__details-icon" />
                 <div>
-                  <h4>React</h4>
-                  <small>Experience</small>
+                  <h4>React.js</h4>
                 </div>
               </article>
 
               <article className="experience__details">
                 <HiOutlineCheckCircle className="experience__details-icon" />
                 <div>
-                  <h4>Next</h4>
-                  <small>Intermediate</small>
+                  <h4>Next.js</h4>
+                </div>
+              </article>
+
+              <article className="experience__details">
+                <HiOutlineCheckCircle className="experience__details-icon" />
+                <div>
+                  <h4>TypeScript</h4>
                 </div>
               </article>
 
@@ -34,15 +39,6 @@ const Experience = () => {
                 <HiOutlineCheckCircle className="experience__details-icon" />
                 <div>
                   <h4>Redux toolkit</h4>
-                  <small>Intermediate</small>
-                </div>
-              </article>
-
-              <article className="experience__details">
-                <HiOutlineCheckCircle className="experience__details-icon" />
-                <div>
-                  <h4>React Query</h4>
-                  <small>Experience</small>
                 </div>
               </article>
 
@@ -50,7 +46,6 @@ const Experience = () => {
                 <HiOutlineCheckCircle className="experience__details-icon" />
                 <div>
                   <h4>JavaScript</h4>
-                  <small>Experience</small>
                 </div>
               </article>
 
@@ -58,7 +53,6 @@ const Experience = () => {
                 <HiOutlineCheckCircle className="experience__details-icon" />
                 <div>
                   <h4>EcmaScript 6</h4>
-                  <small>Experience</small>
                 </div>
               </article>
 
@@ -66,7 +60,6 @@ const Experience = () => {
                 <HiOutlineCheckCircle className="experience__details-icon" />
                 <div>
                   <h4>JQuery</h4>
-                  <small>Experience</small>
                 </div>
               </article>
 
@@ -74,7 +67,6 @@ const Experience = () => {
                 <HiOutlineCheckCircle className="experience__details-icon" />
                 <div>
                   <h4>Bootstrap</h4>
-                  <small>Experience</small>
                 </div>
               </article>
 
@@ -82,7 +74,6 @@ const Experience = () => {
                 <HiOutlineCheckCircle className="experience__details-icon" />
                 <div>
                   <h4>Tailwind CSS</h4>
-                  <small>Intermediate</small>
                 </div>
               </article>
             </div>
