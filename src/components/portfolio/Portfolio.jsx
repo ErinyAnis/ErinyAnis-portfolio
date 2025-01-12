@@ -1,9 +1,9 @@
 import VS from "../../assets/projects/VS.png";
 import IC from "../../assets/projects/IC.png";
-import FOODIES from "../../assets/projects/foodies.png";
 import YASEER from "../../assets/projects/Yaseer.png";
 import MINA_HEMAIA from "../../assets/projects/mena_hemaia.png";
 import AIRBNB_CLONE from "../../assets/projects/airbnb-clone.png";
+import SHOPPERS from "../../assets/projects/shoppers.png";
 
 // import IMG_BG from "../../assets/projects-bg.jpg";
 
@@ -12,6 +12,15 @@ import "./portfolio.css";
 const data = [
   {
     id: 1,
+    image: SHOPPERS,
+    title: "E-commerce",
+    github: "https://github.com/ErinyAnis/e-commerce.git",
+    demo: "https://shoppers-one.vercel.app/",
+    description:
+      "Developed an e-commerce platform using Next.js, TypeScript, Tailwind CSS, and Redux Toolkit. Key features include a dynamic product catalog, advanced search, real-time shopping cart updates, and secure Stripe payments, with content management via Sanity and backend support from Firebase.",
+  },
+  {
+    id: 2,
     image: AIRBNB_CLONE,
     title: "Airbnb Clone",
     github: "https://github.com/ErinyAnis/airbnb-clone.git",
@@ -20,7 +29,7 @@ const data = [
       "Developed an Airbnb clone using Next.js, TypeScript, Tailwind CSS, Prisma, and MongoDB. The application features a responsive UI, user authentication, property listings, and dynamic filtering, offering a seamless booking experience.",
   },
   {
-    id: 2,
+    id: 3,
     image: YASEER,
     title: "Yaseer",
     github: "https://github.com/ErinyAnis/yaseer.git",
@@ -30,7 +39,7 @@ const data = [
   },
 
   {
-    id: 3,
+    id: 4,
     image: IC,
     title: "International Contractors",
     github: "https://github.com/ErinyAnis/international-contractors.git",
@@ -39,7 +48,7 @@ const data = [
       "Developed a responsive, user-friendly website for IC company, leveraging 30+ years of industry expertise in Egyptian ports. Utilized HTML5, CSS3, Bootstrap 5, and jQuery for seamless navigation and interactive features.",
   },
   {
-    id: 4,
+    id: 5,
     image: VS,
     title: "Visual Studio Clone",
     github: "https://github.com/ErinyAnis/visual-studio-clone.git",
@@ -48,23 +57,13 @@ const data = [
       "Recreated Visual Studio using React and TypeScript, showcasing interactive features and customizable UI.",
   },
   {
-    id: 5,
+    id: 6,
     image: MINA_HEMAIA,
     title: "mena Hemaia",
     github: "https://github.com/ErinyAnis/MealsApp.git",
     demo: "https://mena-hemaia.vercel.app/",
     description:
       "Built a portfolio website for finance expert Mena Hemaia, highlighting his roles, qualifications, and commitment to financial education.",
-  },
-
-  {
-    id: 6,
-    image: FOODIES,
-    title: "Foodies Community",
-    github: "https://github.com/ErinyAnis/MealsApp.git",
-    demo: "https://meals-app-weld-zeta.vercel.app/",
-    description:
-      "Built a dynamic foodies community platform with Next.js, enabling users to explore and share recipes. The project features a clean, user-friendly interface and fosters collaboration among food enthusiasts.",
   },
 ];
 
