@@ -1,5 +1,5 @@
 import "./about.css";
-import ME from "../../assets/file-1.png";
+import ME from "../../assets/file-1.webp";
 import { TbAward } from "react-icons/tb";
 import { LuUsers } from "react-icons/lu";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -35,7 +35,7 @@ const About = () => {
                 <article className="about__card">
                   <LuUsers className="about__icon" />
                   <h5>Clients</h5>
-                  <small>10+ Worldwide</small>
+                  <small>5+ Worldwide</small>
                 </article>
 
                 <article className="about__card">
@@ -46,13 +46,14 @@ const About = () => {
               </div>
 
               <p>
-                As a React frontend developer, I specialize in creating
-                dynamic and user-friendly web applications. With
-                experience in JavaScript and a strong proficiency in React, I
-                excel at building responsive and efficient interfaces. I
-                continuously seek to enhance my skills and stay updated with the
-                latest industry trends to ensure the delivery of exceptional
-                user experiences.
+                Hi, I&apos;m Eriny! I&apos;m a passionate Frontend Developer with
+                expertise in React, Next.js, Tailwind CSS, and Redux. I
+                specialize in building responsive, user-friendly web
+                applications that prioritize performance and design. With
+                hands-on experience in freelancing, I&apos;ve developed solutions for
+                diverse projects and am always eager to tackle new challenges.
+                I&apos;m committed to continuous learning and building seamless
+                digital experiences that delight users. 🚀
               </p>
               <Link to="#contact" className="btn btn-primary">
                 Let&apos;s Talk

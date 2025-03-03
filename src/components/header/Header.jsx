@@ -1,5 +1,5 @@
 import CTA from "./CTA";
-import ME from "../../assets/me-1.png";
+import ME from "../../assets/me-1.webp";
 import HeaderSocials from "./HeaderSocials";
 import { HashLink as Link } from "react-router-hash-link";
 import "./header.css";

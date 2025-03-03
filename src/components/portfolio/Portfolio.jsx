@@ -1,7 +1,7 @@
-import VS from "../../assets/projects/VS.png";
-import IC from "../../assets/projects/IC.png";
+// import VS from "../../assets/projects/VS.png";
+// import IC from "../../assets/projects/IC.png";
 import YASEER from "../../assets/projects/Yaseer.png";
-import MINA_HEMAIA from "../../assets/projects/mena_hemaia.png";
+// import MINA_HEMAIA from "../../assets/projects/mena_hemaia.png";
 import AIRBNB_CLONE from "../../assets/projects/airbnb-clone.png";
 import SHOPPERS from "../../assets/projects/shoppers.png";
 
@@ -38,33 +38,33 @@ const data = [
       "Yaseer is a leading Saudi establishment providing accounting and tax services to companies and organizations.",
   },
 
-  {
-    id: 4,
-    image: IC,
-    title: "International Contractors",
-    github: "https://github.com/ErinyAnis/international-contractors.git",
-    demo: "https://intcot.com/",
-    description:
-      "Developed a responsive, user-friendly website for IC company, leveraging 30+ years of industry expertise in Egyptian ports. Utilized HTML5, CSS3, Bootstrap 5, and jQuery for seamless navigation and interactive features.",
-  },
-  {
-    id: 5,
-    image: VS,
-    title: "Visual Studio Clone",
-    github: "https://github.com/ErinyAnis/visual-studio-clone.git",
-    demo: "https://visual-studio-clone-two.vercel.app/",
-    description:
-      "Recreated Visual Studio using React and TypeScript, showcasing interactive features and customizable UI.",
-  },
-  {
-    id: 6,
-    image: MINA_HEMAIA,
-    title: "mena Hemaia",
-    github: "https://github.com/ErinyAnis/MealsApp.git",
-    demo: "https://mena-hemaia.vercel.app/",
-    description:
-      "Built a portfolio website for finance expert Mena Hemaia, highlighting his roles, qualifications, and commitment to financial education.",
-  },
+  // {
+  //   id: 4,
+  //   image: IC,
+  //   title: "International Contractors",
+  //   github: "https://github.com/ErinyAnis/international-contractors.git",
+  //   demo: "https://intcot.com/",
+  //   description:
+  //     "Developed a responsive, user-friendly website for IC company, leveraging 30+ years of industry expertise in Egyptian ports. Utilized HTML5, CSS3, Bootstrap 5, and jQuery for seamless navigation and interactive features.",
+  // },
+  // {
+  //   id: 5,
+  //   image: VS,
+  //   title: "Visual Studio Clone",
+  //   github: "https://github.com/ErinyAnis/visual-studio-clone.git",
+  //   demo: "https://visual-studio-clone-two.vercel.app/",
+  //   description:
+  //     "Recreated Visual Studio using React and TypeScript, showcasing interactive features and customizable UI.",
+  // },
+  // {
+  //   id: 6,
+  //   image: MINA_HEMAIA,
+  //   title: "mena Hemaia",
+  //   github: "https://github.com/ErinyAnis/MealsApp.git",
+  //   demo: "https://mena-hemaia.vercel.app/",
+  //   description:
+  //     "Built a portfolio website for finance expert Mena Hemaia, highlighting his roles, qualifications, and commitment to financial education.",
+  // },
 ];
 
 const Portfolio = () => {
