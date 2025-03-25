@@ -53,8 +53,8 @@ const data = [
     id: 5,
     image: CHAT,
     title: "Real-Time Chat Application",
-    github: "https://github.com/ErinyAnis/e-commerce.git",
-    demo: "https://shoppers-one.vercel.app/",
+    github: "https://github.com/ErinyAnis/chat-app.git",
+    demo: "https://chat-app-alpha-roan.vercel.app/",
     description:
       "Built a real-time chat app using React, Tailwind CSS, Socket.io, and Axios for instant messaging. Integrated Socket.io for real-time communication, Axios for API handling, and designed a responsive UI for a seamless user experience",
   },
