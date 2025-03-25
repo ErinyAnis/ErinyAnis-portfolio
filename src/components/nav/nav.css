@@ -1,5 +1,5 @@
 nav {
-    background-color: #42586038;
+    background-color: #a0c2d0c7;
     width: max-content;
     display: block;
     padding: 0.7rem 0.8rem;
@@ -35,6 +35,7 @@ nav a.active {
     nav {
         gap: 0.7rem;
     }
+
     nav a {
         padding: 0.6rem;
     }
@@ -45,6 +46,7 @@ nav a.active {
         padding: 0.6rem 0.8rem;
         gap: 0.7rem;
     }
+
     nav a {
         font-size: 1.1rem;
         padding: 0.6rem;
