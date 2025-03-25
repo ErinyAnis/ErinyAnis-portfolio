@@ -1,5 +1,5 @@
 nav {
-    background-color: #a0c2d0c7;
+    background-color: #c3ced4c9;
     width: max-content;
     display: block;
     padding: 0.7rem 0.8rem;
@@ -12,6 +12,7 @@ nav {
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(17px);
+    box-shadow: 0px 0px 4px 0px #667c83c9;
 }
 
 nav a {
