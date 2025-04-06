@@ -85,9 +85,17 @@ header .job-title {
 }
 
 @media (max-width: 767px) {
-    .header__socials,
+
     .scroll__down {
         display: none;
+    }
+
+    .header__socials {
+        left: 25px;
+    }
+
+    .header__socials a {
+        font-size: 18px;
     }
 
     .me {

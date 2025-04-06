@@ -1,11 +1,12 @@
 // import VS from "../../assets/projects/VS.png";
 // import IC from "../../assets/projects/IC.png";
 import YASEER from "../../assets/projects/Yaseer.png";
-import MINA_HEMAIA from "../../assets/projects/mena_hemaia.png";
+// import MINA_HEMAIA from "../../assets/projects/mena_hemaia.png";
 import AIRBNB_CLONE from "../../assets/projects/airbnb-clone.png";
 import SHOPPERS from "../../assets/projects/shoppers.png";
 import TAMAYOZ from "../../assets/projects/Tamayoz.png";
 import CHAT from "../../assets/projects/Chat.png";
+import EMS from "../../assets/projects/EMS.png";
 
 // import IMG_BG from "../../assets/projects-bg.jpg";
 
@@ -42,6 +43,15 @@ const data = [
   },
   {
     id: 4,
+    image: EMS,
+    title: "EMS",
+    github: "https://github.com/ErinyAnis/Employee_management_system.git",
+    demo: "https://employee-management-system-steel-alpha.vercel.app/",
+    description:
+      "An employee management system built with React, Tailwind CSS, and Axios, using Context API for state management. It includes user authentication, role-based permissions (admin/employee), and CRUD operations for employee data, all in a responsive interface.",
+  },
+  {
+    id: 5,
     image: SHOPPERS,
     title: "E-commerce",
     github: "https://github.com/ErinyAnis/e-commerce.git",
@@ -50,7 +60,7 @@ const data = [
       "Developed an e-commerce platform using Next.js, TypeScript, Tailwind CSS, and Redux Toolkit. Key features include a dynamic product catalog, advanced search, real-time shopping cart updates, and secure Stripe payments, with content management via Sanity and backend support from Firebase.",
   },
   {
-    id: 5,
+    id: 6,
     image: CHAT,
     title: "Real-Time Chat Application",
     github: "https://github.com/ErinyAnis/chat-app.git",
@@ -58,15 +68,15 @@ const data = [
     description:
       "Built a real-time chat app using React, Tailwind CSS, Socket.io, and Axios for instant messaging. Integrated Socket.io for real-time communication, Axios for API handling, and designed a responsive UI for a seamless user experience",
   },
-  {
-      id: 6,
-      image: MINA_HEMAIA,
-      title: "mena Hemaia",
-      github: "https://github.com/ErinyAnis/MealsApp.git",
-      demo: "https://mena-hemaia.vercel.app/",
-      description:
-        "Built a portfolio website for finance expert Mena Hemaia, highlighting his roles, qualifications, and commitment to financial education.",
-    },
+  // {
+  //     id: 6,
+  //     image: MINA_HEMAIA,
+  //     title: "mena Hemaia",
+  //     github: "https://github.com/ErinyAnis/MealsApp.git",
+  //     demo: "https://mena-hemaia.vercel.app/",
+  //     description:
+  //       "Built a portfolio website for finance expert Mena Hemaia, highlighting his roles, qualifications, and commitment to financial education.",
+  //   },
 
   // {
   //   id: 5,
