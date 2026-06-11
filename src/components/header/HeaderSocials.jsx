@@ -1,14 +1,27 @@
-import { HashLink as Link } from "react-router-hash-link";
 import { BsLinkedin } from "react-icons/bs";
 import { GrGithub } from "react-icons/gr";
 
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-        <Link to="https://linkedin.com/in/eriny-anis" target="_blank"><BsLinkedin /></Link>
-        <Link to="https://github.com/ErinyAnis" target="_blank"><GrGithub /></Link>
+      <a
+        href="https://linkedin.com/in/eriny-anis"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="LinkedIn"
+      >
+        <BsLinkedin />
+      </a>
+      <a
+        href="https://github.com/ErinyAnis"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="GitHub"
+      >
+        <GrGithub />
+      </a>
     </div>
-  )
-}
+  );
+};
 
-export default HeaderSocials
+export default HeaderSocials;

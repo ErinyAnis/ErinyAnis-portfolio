@@ -4,7 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const CTA = () => {
   return (
     <div className="cta">
-      <a href={CV} download className="btn">
+      <a href={CV} download="Eriny_Anis_CV.pdf" className="btn">
         Download CV
       </a>
       <Link to="#contact" className="btn btn-primary">

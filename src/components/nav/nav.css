@@ -1,30 +1,34 @@
 nav {
     background-color: #c3ced4c9;
     width: max-content;
-    display: block;
-    padding: 0.7rem 0.8rem;
+    padding: 0.6rem 1rem;
     z-index: 2;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     bottom: 2rem;
     display: flex;
-    gap: 0.8rem;
+    gap: 0.4rem;
     border-radius: 3rem;
     backdrop-filter: blur(17px);
-    box-shadow: 0px 0px 4px 0px #667c83c9;
+    box-shadow: 0px 0px 8px 0px #667c8340;
 }
 
 nav a {
+    position: relative;
     background: transparent;
-    padding: 0.8rem;
+    padding: 0.75rem;
     border-radius: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.2rem;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 nav a:hover {
     background: rgb(94 104 114 / 26%);
+    transform: translateY(-2px);
 }
 
 nav a.active {
@@ -32,24 +36,65 @@ nav a.active {
     color: var(--color-dark);
 }
 
+/* Tooltip */
+.nav__tooltip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-bg, #1a1a2e);
+    color: var(--color-dark, #fff);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.4rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateX(-50%) translateY(4px);
+}
+
+nav a:hover .nav__tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Tooltip arrow */
+.nav__tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    border-top-color: var(--color-bg, #1a1a2e);
+}
+
 @media (max-width: 992px) {
     nav {
-        gap: 0.7rem;
+        gap: 0.3rem;
     }
 
     nav a {
-        padding: 0.6rem;
+        padding: 0.65rem;
     }
 }
 
 @media (max-width: 767px) {
     nav {
-        padding: 0.6rem 0.8rem;
-        gap: 0.7rem;
+        padding: 0.5rem 0.8rem;
+        gap: 0.3rem;
+        bottom: 1.5rem;
     }
 
     nav a {
         font-size: 1.1rem;
         padding: 0.6rem;
+    }
+
+    .nav__tooltip {
+        display: none;
     }
 }

@@ -10,7 +10,7 @@ const About = () => {
     <section id="about" className="colored-sec">
       <div className="container">
         <div className="main-title text-center">
-          <h5>Get To know</h5>
+          <h5>Get To Know</h5>
           <h2>About Me</h2>
         </div>
 
@@ -18,7 +18,7 @@ const About = () => {
           <div className="col-lg-4 col-xl-3">
             <div className="about__me">
               <div className="about__me-img">
-                <img src={ME} alt="about image" />
+                <img src={ME} alt="Eriny Anis - Front-End Developer" />
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@ const About = () => {
                 <article className="about__card">
                   <TbAward className="about__icon" />
                   <h5>Experience</h5>
-                  <small>1+ year working</small>
+                  <small>3+ Years</small>
                 </article>
 
                 <article className="about__card">
@@ -41,20 +41,21 @@ const About = () => {
                 <article className="about__card">
                   <VscFolderLibrary className="about__icon" />
                   <h5>Projects</h5>
-                  <small>20+ Completed</small>
+                  <small>10+ Completed</small>
                 </article>
               </div>
 
               <p>
-                Hi, I&apos;m Eriny! I&apos;m a passionate Frontend Developer with
-                expertise in React, Next.js, Tailwind CSS, and Redux. I
-                specialize in building responsive, user-friendly web
-                applications that prioritize performance and design. With
-                hands-on experience in freelancing, I&apos;ve developed solutions for
-                diverse projects and am always eager to tackle new challenges.
-                I&apos;m committed to continuous learning and building seamless
-                digital experiences that delight users. 🚀
+                I&apos;m Eriny, a Front-End Developer with 3+ years of
+                experience building responsive, performant web applications. I
+                specialize in React, Next.js, Vue, and Nuxt, with a strong focus
+                on clean code, scalable architecture, and smooth user
+                experiences. I&apos;ve worked with clients across Egypt and
+                Saudi Arabia, delivering everything from admin dashboards and
+                reservation systems to corporate websites — always with
+                attention to detail and a commitment to quality.
               </p>
+
               <Link to="#contact" className="btn btn-primary">
                 Let&apos;s Talk
               </Link>

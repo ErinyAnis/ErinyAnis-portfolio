@@ -4,59 +4,54 @@ import { BiUser } from "react-icons/bi";
 import { RiBook2Line } from "react-icons/ri";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
-import { MdOutlineRateReview } from "react-icons/md";
 import { LuFiles } from "react-icons/lu";
-import { HashLink as Link } from 'react-router-hash-link';
-
+import { HashLink as Link } from "react-router-hash-link";
 import "./nav.css";
 
+const navItems = [
+  { to: "#header", icon: <AiOutlineHome />, label: "Home" },
+  { to: "#about", icon: <BiUser />, label: "About" },
+  { to: "#experience", icon: <RiBook2Line />, label: "Experience" },
+  { to: "#services", icon: <RiServiceLine />, label: "Services" },
+  { to: "#portfolio", icon: <LuFiles />, label: "Portfolio" },
+  { to: "#contact", icon: <BiMessageSquareDetail />, label: "Contact" },
+];
+
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#header');
+  const [activeNav, setActiveNav] = useState("#header");
 
-  // Function to handle scroll event
-  const handleScroll = () => {
-    const sections = ['#header', '#about', '#experience', '#services', '#portfolio', '#testimonials', '#contact'];
-    const scrollPosition = window.scrollY + 150;
-
-    for (const section of sections) {
-      const element = document.querySelector(section);
-      if (element && element.offsetTop <= scrollPosition && element.offsetTop + element.offsetHeight > scrollPosition) {
-        setActiveNav(section);
-      }
-    }
-  };
-
-  // Add scroll event listener when component mounts
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 150;
+      for (const { to } of navItems) {
+        const element = document.querySelector(to);
+        if (
+          element &&
+          element.offsetTop <= scrollPosition &&
+          element.offsetTop + element.offsetHeight > scrollPosition
+        ) {
+          setActiveNav(to);
+        }
+      }
     };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav>
-      <Link to="#header" className={activeNav === '#header' ? 'active' : ''}>
-        <AiOutlineHome />
-      </Link>
-      <Link to="#about" className={activeNav === '#about' ? 'active' : ''}>
-        <BiUser />
-      </Link>
-      <Link to="#experience" className={activeNav === '#experience' ? 'active' : ''}>
-        <RiBook2Line />
-      </Link>
-      <Link to="#services" className={activeNav === '#services' ? 'active' : ''}>
-        <RiServiceLine />
-      </Link>
-      <Link to="#portfolio" className={activeNav === '#portfolio' ? 'active' : ''}>
-        <LuFiles />
-      </Link>
-      <Link to="#testimonials" className={activeNav === '#testimonials' ? 'active' : ''}>
-        <MdOutlineRateReview />
-      </Link>
-      <Link to="#contact" className={activeNav === '#contact' ? 'active' : ''}>
-        <BiMessageSquareDetail />
-      </Link>
+      {navItems.map(({ to, icon, label }) => (
+        <Link
+          key={to}
+          to={to}
+          className={activeNav === to ? "active" : ""}
+          aria-label={label}
+        >
+          {icon}
+          <span className="nav__tooltip">{label}</span>
+        </Link>
+      ))}
     </nav>
   );
 };
