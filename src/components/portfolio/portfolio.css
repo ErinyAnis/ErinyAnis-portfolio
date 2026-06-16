@@ -62,7 +62,6 @@
     margin-bottom: 0.9rem;
 }
 
-/* Pushes footer (credentials + buttons) to the bottom, same spot on every card */
 .portfolio__item-footer {
     margin-top: auto;
     display: flex;
@@ -70,7 +69,6 @@
     gap: 0.6rem;
 }
 
-/* Demo credentials reveal */
 .cred-pill {
     display: inline-flex;
     align-items: center;

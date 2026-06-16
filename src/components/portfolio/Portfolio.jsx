@@ -37,7 +37,7 @@ const data = [
     image: AIRBNB_CLONE,
     title: "Airbnb Clone",
     github: "https://github.com/ErinyAnis/airbnb-clone.git",
-    demo: "https://escapenest.netlify.app/",
+    demo: "https://airbnb-clone-two-silk.vercel.app",
     description:
       "Full-stack property rental platform with OAuth authentication, listing creation, Cloudinary image upload, and dynamic filtering.",
     tags: ["Next.js", "Prisma", "MongoDB"],
