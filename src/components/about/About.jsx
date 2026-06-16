@@ -56,7 +56,7 @@ const About = () => {
                 attention to detail and a commitment to quality.
               </p>
 
-              <Link to="#contact" className="btn btn-primary">
+              <Link to="#contact" className="btn btn-primary px-4 py-2">
                 Let&apos;s Talk
               </Link>
             </div>

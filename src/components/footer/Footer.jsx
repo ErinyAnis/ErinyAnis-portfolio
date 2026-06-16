@@ -1,5 +1,4 @@
 import { HashLink as Link } from "react-router-hash-link";
-import { GrFacebookOption } from "react-icons/gr";
 import { BsLinkedin } from "react-icons/bs";
 import { SiWhatsapp } from "react-icons/si";
 
@@ -24,29 +23,33 @@ const Footer = () => {
             <Link to="#experience">Experience</Link>
           </li>
           <li>
-            <Link to="#services">Services</Link>
+            <Link to="#skills">Skills</Link>
           </li>
           <li>
             <Link to="#portfolio">Portfolio</Link>
           </li>
           <li>
-            <Link to="#testimonials">Testimonials</Link>
-          </li>
-          <li>
-            <Link to="#contact">Conntact</Link>
+            <Link to="#contact">Contact</Link>
           </li>
         </ul>
 
         <div className="footer__socials">
-          <Link to="https://www.facebook.com/eriny.anis/" target="_blank">
-            <GrFacebookOption />
-          </Link>
-          <Link to="https://linkedin.com/in/eriny-anis" target="_blank">
+          <a
+            href="https://linkedin.com/in/eriny-anis"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+          >
             <BsLinkedin />
-          </Link>
-          <Link to="https://wa.me/201227523105" target="_blank">
+          </a>
+          <a
+            href="https://wa.me/201227523105"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="WhatsApp"
+          >
             <SiWhatsapp />
-          </Link>
+          </a>
         </div>
 
         <div className="footer__copyright">
