@@ -1,94 +1,110 @@
-// import VS from "../../assets/projects/VS.png";
-// import IC from "../../assets/projects/IC.png";
+import { useState } from "react";
 import YASEER from "../../assets/projects/Yaseer.png";
-// import MINA_HEMAIA from "../../assets/projects/mena_hemaia.png";
 import AIRBNB_CLONE from "../../assets/projects/airbnb-clone.png";
-import SHOPPERS from "../../assets/projects/shoppers.png";
 import TAMAYOZ from "../../assets/projects/Tamayoz.png";
-import CHAT from "../../assets/projects/Chat.png";
 import EMS from "../../assets/projects/EMS.png";
-
-// import IMG_BG from "../../assets/projects-bg.jpg";
+import KOSOOR from "../../assets/projects/Kosoor.png";
+import TRAVEL_LOG from "../../assets/projects/TravelLog.png";
+import PropTypes from "prop-types";
 
 import "./portfolio.css";
 
 const data = [
   {
     id: 1,
-    image: TAMAYOZ,
-    title: "Tamayoz",
-    github: "https://github.com/ErinyAnis/tamayoz.git",
-    demo: "https://tamayoz.netlify.app/",
+    image: KOSOOR,
+    title: "Kosoor",
+    github: null,
+    demo: "https://kosoortest.kosoor.com.sa/admin/#/",
     description:
-      "Freelance project developing a corporate website for a Saudi consultancy using TypeScript, Next.js, and Tailwind CSS to build Tamayoz with clean code and high performance.",
+      "Admin dashboard for a multi-branch car wash management platform, streamlining service orders, customer tracking, subscriptions, and pricing.",
+    tags: ["Vue.js", "Pinia", "Vee-Validate"],
+    credentials: { username: "test_user", password: "Pos@1234" },
   },
-
   {
     id: 2,
+    image: TRAVEL_LOG,
+    title: "Travel Log",
+    github: "https://github.com/ErinyAnis/travel-log.git",
+    demo: "https://travel-log.vercel.app/",
+    description:
+      "Nuxt 4 travel journal with GitHub OAuth authentication, an interactive MapLibre map, and form validation with VeeValidate and Zod.",
+    tags: ["Nuxt 4", "Pinia", "MapLibre"],
+    credentials: null,
+  },
+  {
+    id: 3,
     image: AIRBNB_CLONE,
     title: "Airbnb Clone",
     github: "https://github.com/ErinyAnis/airbnb-clone.git",
     demo: "https://escapenest.netlify.app/",
     description:
-      "Developed an Airbnb clone using Next.js, TypeScript, Tailwind CSS, Prisma, and MongoDB. The application features a responsive UI, user authentication, property listings, and dynamic filtering, offering a seamless booking experience.",
+      "Full-stack property rental platform with OAuth authentication, listing creation, Cloudinary image upload, and dynamic filtering.",
+    tags: ["Next.js", "Prisma", "MongoDB"],
+    credentials: null,
   },
   {
-    id: 3,
+    id: 4,
+    image: EMS,
+    title: "Employee Management System",
+    github: "https://github.com/ErinyAnis/Employee_management_system.git",
+    demo: "https://employee-management-system-steel-alpha.vercel.app/",
+    description:
+      "Role-based admin and employee dashboards with full CRUD operations for employees, departments, leaves, salary, and attendance.",
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+    credentials: { username: "admin@gmail.com", password: "admin" },
+  },
+  {
+    id: 5,
+    image: TAMAYOZ,
+    title: "Tamayoz",
+    github: "https://github.com/ErinyAnis/tamayoz.git",
+    demo: "https://tamayoz.netlify.app/",
+    description:
+      "Corporate website for a Saudi consultancy, focused on performance and clean, maintainable code.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    credentials: null,
+  },
+  {
+    id: 6,
     image: YASEER,
     title: "Yaseer",
     github: "https://github.com/ErinyAnis/yaseer.git",
     demo: "https://yaseer-puce.vercel.app/",
     description:
-      "Yaseer is a leading Saudi establishment providing accounting and tax services to companies and organizations.",
+      "Responsive website for a Saudi tax and accounting services company.",
+    tags: ["Next.js", "Bootstrap"],
+    credentials: null,
   },
-  {
-    id: 4,
-    image: EMS,
-    title: "EMS",
-    github: "https://github.com/ErinyAnis/Employee_management_system.git",
-    demo: "https://employee-management-system-steel-alpha.vercel.app/",
-    description:
-      "An employee management system built with React, Tailwind CSS, and Axios, using Context API for state management. It includes user authentication, role-based permissions (admin/employee), and CRUD operations for employee data, all in a responsive interface.",
-  },
-  {
-    id: 5,
-    image: SHOPPERS,
-    title: "E-commerce",
-    github: "https://github.com/ErinyAnis/e-commerce.git",
-    demo: "https://shoppers-one.vercel.app/",
-    description:
-      "Developed an e-commerce platform using Next.js, TypeScript, Tailwind CSS, and Redux Toolkit. Key features include a dynamic product catalog, advanced search, real-time shopping cart updates, and secure Stripe payments, with content management via Sanity and backend support from Firebase.",
-  },
-  {
-    id: 6,
-    image: CHAT,
-    title: "Real-Time Chat Application",
-    github: "https://github.com/ErinyAnis/chat-app.git",
-    demo: "https://chat-app-alpha-roan.vercel.app/",
-    description:
-      "Built a real-time chat app using React, Tailwind CSS, Socket.io, and Axios for instant messaging. Integrated Socket.io for real-time communication, Axios for API handling, and designed a responsive UI for a seamless user experience",
-  },
-  // {
-  //     id: 6,
-  //     image: MINA_HEMAIA,
-  //     title: "mena Hemaia",
-  //     github: "https://github.com/ErinyAnis/MealsApp.git",
-  //     demo: "https://mena-hemaia.vercel.app/",
-  //     description:
-  //       "Built a portfolio website for finance expert Mena Hemaia, highlighting his roles, qualifications, and commitment to financial education.",
-  //   },
-
-  // {
-  //   id: 5,
-  //   image: VS,
-  //   title: "Visual Studio Clone",
-  //   github: "https://github.com/ErinyAnis/visual-studio-clone.git",
-  //   demo: "https://visual-studio-clone-two.vercel.app/",
-  //   description:
-  //     "Recreated Visual Studio using React and TypeScript, showcasing interactive features and customizable UI.",
-  // },
-  //
 ];
+
+const CredentialReveal = ({ credentials }) => {
+  const [revealed, setRevealed] = useState(false);
+
+  if (!credentials) return null;
+
+  return revealed ? (
+    <div className="cred-chip">
+      <span className="cred-chip-seg">{credentials.username}</span>
+      <span className="cred-chip-sep">/</span>
+      <span className="cred-chip-seg">{credentials.password}</span>
+      <span className="cred-chip-close" onClick={() => setRevealed(false)}>
+        ×
+      </span>
+    </div>
+  ) : (
+    <button className="cred-pill" onClick={() => setRevealed(true)}>
+      🔑 Show demo login
+    </button>
+  );
+};
+
+CredentialReveal.propTypes = {
+  credentials: PropTypes.shape({
+    username: PropTypes.string.isRequired,
+    password: PropTypes.string.isRequired,
+  }),
+};
 
 const Portfolio = () => {
   return (
@@ -100,27 +116,68 @@ const Portfolio = () => {
         </div>
 
         <div className="portfolio-container row g-4">
-          {data.map(({ id, image, title, github, demo, description }) => {
-            return (
-              <div className="col-md-6 col-lg-4" key={id}>
+          {data.map(
+            ({
+              id,
+              image,
+              title,
+              github,
+              demo,
+              description,
+              tags,
+              credentials,
+            }) => (
+              <div className="col-md-6 col-lg-4 d-flex" key={id}>
                 <article className="portfolio__item">
                   <div className="portfolio__item-image">
                     <img src={image} alt={title} loading="lazy" />
                   </div>
+
                   <h3>{title}</h3>
                   <p>{description}</p>
-                  <div className="portfolio__item-cta">
-                    <a href={github} className="btn" target="_blank">
-                      Github
-                    </a>
-                    <a href={demo} className="btn btn-primary" target="_blank">
-                      Live Demo
-                    </a>
+
+                  <div className="portfolio__item-tags">
+                    {tags.map((tag, i) => (
+                      <span key={i} className="portfolio__tag">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="portfolio__item-footer">
+                    <CredentialReveal credentials={credentials} />
+
+                    <div
+                      className={`portfolio__item-cta ${
+                        !github || !demo ? "single" : ""
+                      }`}
+                    >
+                      {github && (
+                        <a
+                          href={github}
+                          className="btn"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          GitHub
+                        </a>
+                      )}
+                      {demo && (
+                        <a
+                          href={demo}
+                          className="btn btn-primary"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Live Demo
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </article>
               </div>
-            );
-          })}
+            ),
+          )}
         </div>
       </div>
     </section>
